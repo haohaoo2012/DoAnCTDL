@@ -96,7 +96,7 @@ namespace DoAnCTDL
                 preNode.Data();
                 Console.Write("\n\nmaxnode ");
                 maxNode.Data();
-				Console.WriteLine("\n\n----------------------------------------");
+		Console.WriteLine("\n\n----------------------------------------");
 				
 				maxNode.right = node.right;
 				if (maxNode != node.left)
