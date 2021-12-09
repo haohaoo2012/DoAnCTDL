@@ -36,12 +36,12 @@ namespace DoAnCTDL
 
 		public bool lessThan(int productId)
 		{
-			return this.product.getId() < product.getId();
+			return this.product.getId() < productId;
 		}
 
 		public bool hasproduct(int productId)
 		{
-			return this.product.getId() == product.getId();
+			return this.product.getId() == productId;
 		}
 
 	}

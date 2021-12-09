@@ -25,11 +25,11 @@ namespace DoAnCTDL
 			tree.insert(new Node(new Product(12, "VGA NVIDIA", 3800, 4, "Ngon")));
 			tree.insert(new Node(new Product(17, "USB 16gb", 250, 3, "Xịn xò")));
 			tree.insert(new Node(new Product(7, "Laptop Dell Vostro 5490", 18000, 4, "Máy đẹp")));
-		  //tree.insert(new Node(new Product(9, "laptop Lenovo Thinkpad T14", 21000, 4, "Máy mạnh")));
+		  tree.insert(new Node(new Product(9, "laptop Lenovo Thinkpad T14", 21000, 4, "Máy mạnh")));
 			tree.insert(new Node(new Product(8, "Surface Pro 3", 15000, 3, "máy yếu")));
 			tree.insert(new Node(new Product(3, "Logitech Mouse", 480, 3, "Giá ổn")));
 
-            
+
             //Hiển thị
             tree.TraversePreOrder(); // N L R
             tree.TraversetInOrder(); // L N R
@@ -37,22 +37,23 @@ namespace DoAnCTDL
 
 
             //Xóa
-           // tree.delete(10);
-           // tree.TraversePreOrder(); ; // L + R
+
+            tree.delete(10);
+            tree.TraversePreOrder(); // L + R
             
-            
+
             //Tìm kiếm
-            //int productid = 12;
-            //Node node = tree.search(productid);
-            //if (node == null)
-            //{
-            //    Console.WriteLine ("\nKhông có kết quả tìm kiếm. Xin vui lòng thử lại! \n");
-            //}
-            //else
-            //{
-            //    Console.WriteLine ("\n-------------Kết quả tìm kiếm ------------- \n");
-            //    node.Data();
-            //}
+            int productid = 3;
+            Node node = tree.search(productid);
+            if (node == null)
+            {
+                Console.WriteLine("\nKhông có kết quả tìm kiếm. Xin vui lòng thử lại! \n");
+            }
+            else
+            {
+                Console.WriteLine("\n-------------Kết quả tìm kiếm ------------- \n");
+                node.Data();
+            }
 
         }
 

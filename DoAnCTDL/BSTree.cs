@@ -91,12 +91,13 @@ namespace DoAnCTDL
 					preNode = maxNode;
 					maxNode = maxNode.right;
 				}
-
-				//Console.Write("\n\npreNode ");
-				//preNode.printData();
-				//Console.Write("\n\nmaxnode ");
-				//maxNode.printData();
-
+                Console.WriteLine("\n\n-------------NodeInfor------------------");
+                Console.Write("\npreNode ");
+                preNode.Data();
+                Console.Write("\n\nmaxnode ");
+                maxNode.Data();
+				Console.WriteLine("\n\n----------------------------------------");
+				
 				maxNode.right = node.right;
 				if (maxNode != node.left)
 				{
@@ -115,6 +116,7 @@ namespace DoAnCTDL
 				node.left = delete(node.left, productId);
 			}
 			return node;
+            
 		}
 //TraversePreOrder
 		public void TraversePreOrder()
@@ -126,7 +128,6 @@ namespace DoAnCTDL
 		private void TraversePreOrder(Node node)
 		{
 			if (node == null) return;
-
 			node.Data();
 			TraversePreOrder(node.left);
 			TraversePreOrder(node.right);
@@ -141,8 +142,6 @@ namespace DoAnCTDL
 		private void TraverseInOrder(Node node)
 		{
 			if (node == null) return;
-
-
 			TraverseInOrder(node.left);
 			node.Data();
 			TraverseInOrder(node.right);
@@ -160,7 +159,6 @@ namespace DoAnCTDL
 			{
 				return;
 			}
-
 			TraversePostOrder(node.left);
 			TraversePostOrder(node.right);
 			node.Data();
