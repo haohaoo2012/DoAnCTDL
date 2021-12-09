@@ -68,11 +68,11 @@ namespace DoAnCTDL
 		public virtual void productInfor()
 		{
 			Console.Write("\nId: " +id);
-            //Console.Write("\nname: " + this.productname);
-            //Console.Write("\nprice: " + this.price);
-            //Console.Write("\nrate: " + this.rate);
-            //Console.Write("\ndes: " + this.description);
-            //Console.Write("\n------------------------");
+            Console.Write("\nname: " + this.productname);
+            Console.Write("\nprice: " + this.price);
+            Console.Write("\nrate: " + this.rate);
+            Console.Write("\ndes: " + this.description);
+            Console.Write("\n------------------------");
         }
 
     }
